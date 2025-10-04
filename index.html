@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizPro Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+    .btn-custom {
+      background-color: #0d6efd;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+    .services .card {
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .services .card:hover {
+      transform: translateY(-10px);
+    }
+    .about {
+      background: #f8f9fa;
+      padding: 60px 0;
+    }
+    .testimonials {
+      background: #0d6efd;
+      color: #fff;
+      padding: 60px 0;
+    }
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+    }
+    footer {
+      background: #212529;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">BizPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <div class="container">
+      <h1>Grow Your Business with Smart Solutions</h1>
+      <p>We help companies achieve success through innovation, strategy, and technology.</p>
+      <a href="#contact" class="btn btn-custom mt-4">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Services</h2>
+        <p class="text-muted">We provide tailored solutions for your business needs</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h4 class="fw-bold">Business Consulting</h4>
+            <p>Expert advice to help you make informed strategic decisions and grow effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h4 class="fw-bold">Technology Solutions</h4>
+            <p>Innovative digital tools to streamline operations and improve performance.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h4 class="fw-bold">Project Management</h4>
+            <p>Efficient management techniques to deliver successful projects on time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">About Us</h2>
+      <p class="lead">At BizPro Solutions, we combine business expertise with innovative strategies to empower organizations worldwide. Our mission is to provide effective, modern, and scalable solutions that drive growth.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5">What Our Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-light text-dark rounded">
+            <p>"BizPro helped us transform our operations and increase efficiency by 40%."</p>
+            <h6 class="fw-bold mt-3">— Sarah Johnson</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-light text-dark rounded">
+            <p>"Professional, reliable, and innovative – highly recommended!"</p>
+            <h6 class="fw-bold mt-3">— David Smith</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-light text-dark rounded">
+            <p>"Their consulting services gave us the insights we needed to expand globally."</p>
+            <h6 class="fw-bold mt-3">— Maria Lopez</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="text-muted">We'd love to hear from you</p>
+      </div>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BizPro Solutions. All Rights Reserved.</p>
+    <div>
+      <a href="#" class="text-white me-3">Facebook</a>
+      <a href="#" class="text-white me-3">LinkedIn</a>
+      <a href="#" class="text-white">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
